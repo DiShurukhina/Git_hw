@@ -1,0 +1,31 @@
+Title: GET /users returns 500 error instead of user list
+
+Date: July 23, 2025
+
+Reported by: Dinara Shurukhina
+
+Environment:
+  API Version: v1.4
+  Base URL: https://api.example.com
+  Tool: Postman 10.21.1
+  Auth: Bearer token (valid)
+
+Steps to Reproduce:
+  1.Send a GET request to https://api.example.com/users
+  2. Use a valid Authorization token
+  3.Check the response
+
+Expected Result:
+  API should return a 200 status with a list of users in JSON format.
+
+Actual Result:
+  API returns a 500 Internal Server Error.
+Response body:
+{
+  "error": "Internal Server Error"
+}
+
+Additional Info:
+  Same request worked in previous version (v1.3)
+  Happens in both staging and production
+  No filters or query params used
