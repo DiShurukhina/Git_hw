@@ -1,0 +1,26 @@
+Title: "Submit" button doesn't work on contact form
+
+Date: July 23, 2025
+
+Reported by: John Doe
+
+Environment:
+	Windows 10
+	Google Chrome Version 125.0
+	Website: https://example.com/contact
+
+Steps to Reproduce:
+	1. Go to https://example.com/contact
+	2. Fill in the contact form
+	3. Click the "Submit" button
+
+Expected Result:
+	The form is submitted and a success message appears.
+
+Actual Result:
+	Nothing happens when clicking "Submit". No confirmation message is shown.
+
+Additional Info:
+	Console shows error: TypeError: form is null
+	Happens every time
+	Screenshot attached
